@@ -147,6 +147,13 @@ d3.selectAll('button').on('click', function (e) {
       .attr('text-anchor', 'middle')
       .text('Countries')
       .style('fill','white')
+
+      svg.append('text')
+      .attr('x', 600)
+      .attr('y', 600)
+      .attr('text-anchor', 'middle')
+      .text('Source: Gallup World Poll')
+      .style('fill','white')
   
       selector.selectAll("option")
         .data(elements)
