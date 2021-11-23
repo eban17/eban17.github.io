@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+<h1>Interactive Assignment 3</h1>
+
+<div id="drop"></div>
+<br>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<script src="d3.js"></script>
+
+<br>
+<hr class="new5">
+<div id="map" style="width: 900px; height: 400px;"></div>
+  <br>
+  <br>
+
+
+<div class="row">
+	<div class="column" style="background-color:#f7f4e1;">
+		<div id="form">
+
+			<input type="checkbox" id="cbSeniors" unchecked> Top 5 highest life expectancy countries 
+			<br>
+			<input type="checkbox" id="cbWomen" unchecked> Top 5 lowest life expectancy countries
+		  </div>
+			<input type="checkbox" id="cbLowest" name="cbLowest" value="Denmark">
+			<label for="cbLowest"> Top 5 lowest ranked countries</label><br>
+			<input type="checkbox" id="cbFinland" name="cbFinland" value="Finland">
+			<label for="cbFinland"> Top 5 highest ranked countries</label><br>
+			<input style="opacity: 0;" type="checkbox" id="cbMen" name="cbMen" value="men">
+			<label style="opacity: 0;" for="cbMen"> test</label><br><br>
+		<button id="btnForm">Filter</button>
+		  <script type="text/javascript" src="ki.js"></script>
+	</div>
+	<div class="column" style="background-color:#f7f4e1;">
+	    <div class="input-color">
+			<input type="text" value="Lowest ranked countries" />
+			<div class="color-box" style="background-color: #ff0a0a;"></div>
+		</div>
+		<br>
+		<div class="input-color">
+			<input type="text" value="Highest ranked countries" />
+			<div class="color-box" style="background-color: #58ff0a;"></div>
+		</div>
+		<br>
+		<div class="input-color">
+			<input type="text" value="Highest life expectancy " />
+			<div class="color-box" style="background-color: #ffd20a;"></div>
+		</div>
+		<br>
+		<div class="input-color">
+			<input type="text" value="Lowest life expectancy " />
+			<div class="color-box" style="background-color: #0e0d0d;"></div>
+		</div>
+	</div>
+  </div>
+
+  <hr class="new5">
+  <br>
+<p>For this assignment we used our data set from kaggle. We chose to go with the world happiness data set because it piqued our interest.  We wanted to know what countries or regions rank the highest in overall happiness in the happiness scale index and the factors that contribute to happiness? 
+	We chose to go with a drop down interactive style for our assignment. Depending upon the drop down chosen the values on the bar chart changes to show the respective changes and applies almost immediately. We also added a tooltip functionality in which when you hover over a bar it shows the count for respective data. At first we tried to implement a world map that shows the data on the respective countries, however it was difficult to implement since neither of us had experience in d3 to pull it off.But we did manage to implement world data in which a checkbox was added in. When the user interacts with these checkboxes the corresponding data shows up on the world map as well. 
+	 </p>
+</body>
+</html>

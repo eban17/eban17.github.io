@@ -1,0 +1,144 @@
+body {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    background-color: #f7f4e1;
+    width: 840px;
+    font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+    font-size: 0.95em;
+  }
+  hr.new5 {
+      border-top: 3px dashed red;
+    width: 900px;
+  }
+  
+  a, a:visited { text-decoration: none; color: navy; }
+  a:hover { text-decoration: underline; color: #f4b014; }
+  img, a.img, a:hover.img { border: none; }
+  
+  img {
+    max-width: 800px;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: red;
+    background-color: inherit;
+    font-weight: normal;
+    padding: 0 0 5px 0;
+    margin: 15px 0 0 0;
+    border: none;
+    clear: right;
+  }
+  h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+  h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+  h3 { font-size: 13pt; }
+  h4 { font-size: 12pt; }
+  h5 { font-size: 11pt; }
+  p { margin: 0 0 10px 0; }
+  hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+  ol { margin: 1em; }
+  
+  .content {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #ffffff;
+  }
+  
+  .article {
+    line-height: 1.5em;
+  }
+  
+  .entry  {
+    border-top: 1px solid #ddd;
+    padding-top: 2px;
+    margin-top: 3em;
+  }
+  figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  .text{
+      text-rendering: optimizeSpeed;
+      
+  }
+  .drop{
+      fill: rgb(54, 156, 240);
+      position:absolute;
+      background-position: 40ch;
+      
+  }
+  
+  .rectangle {
+    fill: rgb(17, 18, 19);
+}
+.rectangle:hover {
+    fill: red;
+}
+.axis {
+  font:larger;
+}
+.color {
+    background-color: rgb(58, 146, 204);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  shape-rendering: auto;
+  
+}
+  
+  ul {
+      margin: 20px;
+  }
+  
+  .input-color {
+      position: relative;
+  }
+  .input-color input {
+      padding-left: 20px;
+  }
+  .input-color .color-box {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background-color: #ccc;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+    height: 150px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
